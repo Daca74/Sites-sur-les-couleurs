@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Carla Dach">
+<link rel="icon" type="image/png" href="./medias/logo/couleur.png">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/script.js" defer></script>
+<title>Couleurs</title>
+</head>
+
+<body>
+    <header>
+     <h1>Couleurs CSS</h1>
+     <section>
+          <button id="boutonMoins">-</button>
+          <span style="font-size: small;">A</span><span style="font-size: medium;">A</span><span style="font-size: large;">A</span>
+          <button id="boutonPlus">+</button>
+     </section>
+    </header>
+
+    <section>
+    <nav id="haut"></nav>
+      <h2>Menu</h2>
+          <nav>
+          <ul>
+           <li><a href="#diff">Les différent code des couleurs</a></li>
+           <li><a href="#code">Code des couleurs</a></li>
+           <li><a href="#color">Modifier la couleur de fond</a></li>
+           <li><a href="#palette">Palette de couleur</a></li>
+           <li><a href="#elements">Les differents éléments qu'on peu changer de couleurs</a></li>
+          </ul>
+          </nav>
+        </section>
+        <section>
+         <nav id="diff"></nav>
+         <h2>Les différent code des couleurs</h2>
+         <p>1.En nommant les couleurs en anglais.<br> Gris = Grey <br>Exemple: background-color: grey</p>
+         <p>2.En utilisant leur codes Hexadécimal.<br>Le code hexa de gris est: #808080<br>Exemple: background-color: #808080</p>
+         <p>3.En utilisant leur codes RGB.<br> Le code RGB de gris est:(128, 128, 128)<br>Exemple: background-color: rgb(128, 128, 128)</p>
+         <p>4.En utilisant leur codes HSL.<br> Le code HSL de gris est:(0, 0, 50%)<br>Exemple: background-color: hsl(0, 0, 50%)</p>
+         <p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Type_color">Plus d'informations sur le Css couleurs</a></p>
+    </section>
+
+    <section>
+    <nav id="code"></nav>
+     <h2>Code des couleurs</h2>
+     
+     <h3>Cocher la couleur</h3>
+     <form name="couleur1">
+       <label>
+         <input type="radio" name="reponse1"/>Red
+       </label>
+     </form>
+       <h4></h4>
+   
+     <h3>Cocher la couleur</h3>
+     <form name="couleur2">
+      <label>
+         <input type="radio" name="réponse2"/>Orange
+       </label>
+     </form>
+     <h4></h4>
+ 
+     <h3>Cocher la couleur</h3>
+     <form name="couleur3">
+       <label>
+         <input type="radio" name="réponse3"/>Yellow
+       </label>
+     </form>
+     <h4></h4>
+
+     <h3>Cocher la couleur</h3>
+     <form name="couleur4">
+      <label>
+         <input type="radio" name="réponse4"/>Green
+       </label>
+     </form>
+     <h4></h4>
+    
+     <h3>Cocher la couleur</h3>
+     <form name="couleur5">
+      <label>
+         <input type="radio" name="réponse5"/>Blue
+       </label>
+     </form>
+     <h4></h4>
+
+     <h3>Cocher la couleur</h3>
+     <form name="couleur6">
+      <label>
+         <input type="radio" name="réponse5"/>Purple
+       </label>
+     </form>
+     <h4></h4>
+     <button type="button" id="result">Obtenir les codes!!</button>
+ </section>
+
+         
+    <section>
+         <table border="1">
+          <tr>
+            <th>Les différentes facon de coder les couleurs</th>
+          </tr>
+          <tr>
+           <th>Couleur </th>
+           <th>Mot-clé</th>
+           <th>Hexa</th>
+           <th>RGB</th>
+           <th>HSL</th>
+           <th>------</th>
+          </tr>
+          <tr>
+           <th>noir</th>
+           <th>Black</th>
+           <th>#000000</th>
+           <th>rgb(0, 0, 0)</th>
+           <th>hsl(0%, 0%, 0%)</th>
+           <th></th>
+          </tr>
+          <tr>
+           <th>blanc</th>
+           <th>White</th>
+           <th>#ffffff</th>
+           <th>rgb(255, 255, 255)</th>
+           <th>hsl(0%, 100%, 100%)</th>
+           <th></th>
+          </tr>
+          <tr>
+           <th>gris</th>
+           <th>Grey</th>
+           <th>#808080</th>
+           <th>rgb(128, 128, 128)</th>
+           <th>hsl(0%, 0%, 50%)</th>
+           <th></th>
+          </tr>
+          <tr>
+           <th>rouge</th>
+           <th>Red</th>
+           <th>#ff0000</th>
+           <th>rgb(255, 0, 0)</th>
+           <th>hsl(0%, 100%, 50%)</th>
+           <th></th>
+          </tr>
+          <tr>
+           <th>bleue</th>
+           <th>Blue</th>
+           <th>#0000ff</th>
+           <th>rgb(0, 0, 255)</th>
+           <th>hsl(240%, 100%, 50%)</th>
+           <th></th>
+          </tr>
+          <tr>
+           <th>vert</th>
+           <th>Green</th>
+           <th>#008000</th>
+           <th>rgb(0, 128, 0)</th>
+           <th>hsl(120%, 100%, 25%)</th>
+           <th></th>
+          </tr>
+     </table>
+</section>
+
+<section>
+<nav id="color"></nav>
+     <h2>Modifier la couleur de fond</h2>
+         <p>
+          <label for="couleurs">Choisissez une couleur de fond en faisant glisser le curseur :</label>
+          <input type="range" id="couleurs" min="0" max="360" step="1" value="180">
+         </p>
+</section>
+
+<section>
+  <nav id="palette"></nav>
+     <h2>Palette de couleur</h2>
+     <p>Grace a ce formulaire quand vous passerez la souris sur les cases de couleur,<br>vous trouverer le code RGB puis HSL et enfin le Hexa.</p>
+     <p>Vous pouvez egalement comparer les differentes teinte de couleurs et trouver la couleur qui vous correspond!</p>
+     <p>
+          <label class="box">
+          <input type="color" name="couleur" class="colors">
+          </label>
+          <label for="box">
+          <input type="color" name="couleur" class="colors">
+          </label>
+          <label for="box">
+          <input type="color" name="couleur" class="colors">
+         </label>
+     </p>
+</section>
+
+    <section>
+    <nav id="elements"></nav>
+         <h2>Les differents éléments qu'on peu changer de couleurs</h2>
+         <p>Les differents elements qui peuvent changer de couleurs:</p>
+         <label for="Diffelement">Different elements changeable</label>
+         <select name="Diffelemt" id="Diffelement">
+              <option value="Fond" selected>Couleur Fond = Background-color</option>
+              <option value="Text">Couleur Texte = Color</option>
+              <option value="Ombre">Couleur Bordure = border-color</option>
+              <option value="Decoration">Couleur Decoration = text-decoration-color</option>
+         </select>
+         </section>
+    <section>
+     <iframe src="https://developer.mozilla.org/fr/docs/Web/CSS/background-color" sandbox></iframe>
+     <iframe src="https://developer.mozilla.org/fr/docs/Web/CSS/color" sandbox></iframe>
+     <iframe src="https://developer.mozilla.org/fr/docs/Web/CSS/border-color" sandbox></iframe>
+     <iframe src="https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration-color" sandbox></iframe>
+    </section>
+
+    <section>
+    <a href="#haut"><img src="./medias/logo/fleche.png" alt="image.png"></a>
+    </section>
+ 
+    <footer>
+     <div id="content1">
+         <div class="box1">
+               <p><a href="mailto:carla-eve.dach@iut-dijon.u-bourgogne.fr">Carla Dach</a></p>
+               <a href="https://www.facebook.com/"><img src="./medias/logo/facebook.png" alt="image.png"></a>
+               <a href="https://www.instagram.com/"><img src="./medias/logo/instagram.png" alt="image.png"></a>
+               <a href="https://twitter.com/"><img src="./medias/logo/twitter.png" alt="image.png"></a>
+          </div>
+
+         <div class="box2">
+              <p>&laquo;Fools ignore complexity. Pragmatists suffer it.Some can avoid it. Geniuses remove it.&raquo;</p>
+              <p>Alan PERLIS</p>
+          </div>
+
+         <div class="box3">
+              <p>Powered by</p>
+              <img src="./medias/logo/html.png" alt="image.png">
+              <img src="./medias/logo/css.png" alt="image.png">
+              <img src="./medias/logo/js.png" alt="image.png">
+          </div>
+     </div>
+    </footer>
+ </body>
+</html>
