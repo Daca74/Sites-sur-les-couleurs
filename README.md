@@ -6,4 +6,4 @@ cliquer sur le index.html
 BRAVO ! Tu peut maintenant voir mon premier site !
 INSTRUCTIONS:
 To see the project you must download the zip and dezip the project, then you can click on index.html
-CONGRATS ! You can now see my firt website ! 
+CONGRATS ! You can now see my first website ! 
